@@ -1,4 +1,4 @@
-package com.shubham.springboot.productcatalog.Models;
+package com.shubham.springboot.productcatalog.models;
 
 public enum Status {
 

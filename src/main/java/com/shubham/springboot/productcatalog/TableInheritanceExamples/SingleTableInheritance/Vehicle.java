@@ -15,6 +15,6 @@ public class Vehicle {
     @Id
     private int vehicleId;
     private String vehicleName;
-    private String vehicleType;
+
 
 }

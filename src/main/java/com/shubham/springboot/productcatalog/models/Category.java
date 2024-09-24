@@ -1,5 +1,7 @@
 package com.shubham.springboot.productcatalog.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -21,7 +23,7 @@ public class Category extends BaseModel{
     private String name;
     private String description;
 
+    @JsonBackReference
     @OneToMany(mappedBy = "category",fetch = FetchType.LAZY)
-    @Fetch(FetchMode.SUBSELECT)
     private List<Product> products;
 }

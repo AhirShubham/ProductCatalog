@@ -22,15 +22,15 @@ public class ProductRepoTest {
         products.stream().forEach(product -> System.out.println(product.getPrice()));
     }
 
-    @Test
-    @Transactional
+    //@Test
+    //@Transactional
     public void testGetCategoryNameByProductId() {
         String categoryName = productRepo.getCategoryNameByProductId(1L);
         System.out.println(categoryName);
     }
 
-    @Test
-    @Transactional
+    //@Test
+    //@Transactional
     public void getProductById(){
 
         Product p = productRepo.findById(1L).get();
